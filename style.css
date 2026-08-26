@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #f4f3ef;
+    color: #172333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.navbar {
+    padding: 18px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid #d8d5cc;
+}
+
+.logo h1 {
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.logo p {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    order: 3;
+    width: 100%;
+}
+
+nav a, .icons a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover, .icons a:hover {
+    color: #b89455;
+}
+
+.icons {
+    display: flex;
+    gap: 18px;
+    font-size: 17px;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+164deg, rgb(23 35 51 / 1%), rgb(23 35 51 / 10%)), url(images/hero.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    padding: 0 6%;
+    max-width: 520px;
+}
+
+.hero-text span, .intro span, .story span, .welcome span {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #b89455;
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.line {
+    width: 90px;
+    height: 1px;
+    background: #b89455;
+    margin: 28px 0;
+}
+
+.hero-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b535b;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 22px;
+    border: 1px solid #172333;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #172333;
+    color: white;
+}
+
+.collection {
+    padding: 60px 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.intro p {
+    font-size: 13px;
+    color: #777;
+}
+
+.products {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 25px;
+}
+
+.card {
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 340px;
+}
+
+.card img {
+    height: 340px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.04);
+}
+
+.card h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 16px;
+}
+
+.card p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777;
+    padding: 6px 0 12px;
+    border-bottom: 1px solid #d8d5cc;
+}
+
+.card div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    font-size: 11px;
+}
+
+.card a:hover {
+    color: #b89455;
+}
+
+.story {
+    min-height: 400px;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgb(23 35 51 / 24%), rgba(23, 35, 51, 0.82)), url(images/story.webp.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.story div {
+    max-width: 560px;
+    margin: 0;
+}
+
+.story h3, .welcome h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 18px 0 24px;
+}
+
+.story p, .welcome p {
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 470px;
+    color: #f0efe9;
+}
+
+.story a {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #d1b77d;
+}
+
+.welcome {
+    padding: 70px 20px;
+    text-align: center;
+    background: #e3ddd1;
+}
+
+.welcome p {
+    margin: 0 auto;
+    color: #625f58;
+}
+
+.dark {
+    background: #172333;
+    color: white;
+}
+
+footer {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background: #172333;
+    color: white;
+}
+
+footer h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+footer p, footer small {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #aeb4ba;
+}
+
+footer p {
+    margin-top: 3px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact a {
+    font-size: 12px;
+    color: #d9dde0;
+}
+
+.contact i {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.contact a:hover {
+    color: #d1b77d;
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        height: 88px;
+        padding: 0 6%;
+    }
+
+    nav {
+        order: 0;
+        width: auto;
+    }
+
+    .hero h2 {
+        font-size: 72px;
+    }
+
+    .story h3, .welcome h3 {
+        font-size: 50px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 40px 6%;
+    }
+
+    .contact {
+        flex-direction: row;
+        gap: 25px;
+    }
+}
